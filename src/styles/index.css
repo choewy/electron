@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@import 'tailwindcss/preflight';
+
+@tailwind utilities;
+
+@reference "tailwindcss";
+
+@layer components {
+  .btn-primary {
+    @apply hover:opacity-80 text-white;
+  }
+  .btn-secondary {
+    @apply hover:opacity-70 text-white;
+  }
+  .input {
+    @apply border rounded-md px-4 py-2 focus:outline-none focus:ring-2;
+  }
+  .card {
+    @apply rounded-md p-6 shadow-lg;
+  }
+  .gradient-bg {
+    @apply bg-gradient-to-r to-purple-500 size-20;
+  }
+}
